@@ -13,15 +13,15 @@
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <script defer src="../index.js"></script>
 </head>
-<body class="inf-grid row">
-    <header class="header inf-grid-header col-12">
-        <nav class="navbar navbar-expand-xl navbar-light bg-gris vw">
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-xl navbar-light bg-gris">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img class="logo" src="../img/logo.png" alt="LINEAGE2DC"></a>
-                <button class="navbar-toggler bg-white mg-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler bg-white mg-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -35,7 +35,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white fs-2 nav-text-spacing" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    CONTACTO</a>
+                                CONTACTO</a>
                         <ul class="dropdown-menu bg-gris nav-rep-text-center" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-white fs-2 nav-link" href="https://www.facebook.com/groups/613033368718649">FACEBOOK</a></li>
                             <li><a class="dropdown-item text-white fs-2 nav-link" href="https://discord.gg/nxpKgpn6MM">DISCORD</a></li>
@@ -50,49 +50,52 @@
             </div>
         </nav>
     </header>
-   <main class="main-ingresar row">
-            <div class="welcome-back padding-left col-lg-col-12 col-xl-6">
-                <div class="message col-12">
+    <main class="main-ingresar">
+        <div class="container-fluid">
+            <div class="welcome-back row">
+                <div class="message col-lg-col-12 col-xl-6">                       
                     <h1>Bienvenido nuevamente</h1>
                     <p>Si aun no tiene una cuenta por favor registrese aqui</p>
                     <a class="message-button" href="registrarse.html">Registrarse</a>
                 </div>
+                <div class="col-lg-col col-xl-6">
+                    <form class="formulario padding-left">
+                        <h2 class="create-account">Iniciar Sesion</h2>
+                        <p class="cuenta-gratis"><a href="registrarse.html">¿Aun no tienes cuenta?</a></p>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="button" value="Inisiar Sesion">
+                    </form> 
+                </div>
             </div>
-            <form class="formulario padding-left col-lg-col-12 col-xl-6">
-                <h2 class="create-account">Iniciar Sesion</h2>
-                <p class="cuenta-gratis"><a href="registrarse.html">¿Aun no tienes cuenta?</a></p>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <input type="button" value="Inisiar Sesion">
-            </form> 
+        </div>    
     </main>
-    <footer class="bg-dark text-center text-white row">
+    <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0 col-12">
-        <!-- Section: Social media -->
+            <!-- Section: Social media -->
             <section class="mb-4">
+
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-youtube"></i></a>
 
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
+
         </div>
         <!-- Grid container -->
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
+                © 2020 Copyright:
         <a class="text-white" href="https://mdbootstrap.com/">© 2022 LINEAGE 2 ALFA Corporation. All rights reserved. All trademarks are the property of their respective owners.</a>
         </div>
         <!-- Copyright -->
-    </footer>     
+    </footer>  
 </body>      
 </html>

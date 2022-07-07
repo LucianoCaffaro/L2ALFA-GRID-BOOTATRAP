@@ -13,9 +13,9 @@
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <script defer src="../index.js"></script>
 </head>
-<body class="inf-grid row">
-    <header class="header inf-grid-header col-12">
-        <nav class="navbar navbar-expand-xl navbar-light bg-gris vw">
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-xl navbar-light bg-gris">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img class="logo" src="../img/logo.png" alt="LINEAGE2DC"></a>
@@ -50,21 +50,26 @@
             </div>
         </nav>
     </header>
-     <main class="main-ingresar row">
-            <div class="welcome-back padding-left col-lg-col-12 col-xl-6">
-                <div class="message col-12">
+    <main class="main-ingresar">
+        <div class="container-fluid">
+            <div class="welcome-back row">
+                <div class="message col-lg-col-12 col-xl-6">
                     <h1 class="messageh2">Bienvenido a Lineage 2 DC</h1>
                     <p>Si ya tienes una cuenta inicia sesion aqui</p>
                     <a class="message-button" href="ingresar.html">Iniciar Sesion</a>
-                </div>
-            </div>
-            <form class="formulario padding-left col-lg-col-12 col-xl-6">
-                <h2 class="create-account messageh2">Crear una cuenta</h2>
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <input type="button" value="Registrarse">
-            </form> 
+                </div>                       
+                <div class="col-lg-col-12 col-xl-6">
+                    <div class="padding-top">
+                        <form class="formulario">
+                            <h2 class="create-account messageh2">Crear una cuenta</h2>
+                            <input type="text" placeholder="Nombre">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Contraseña">
+                            <input type="button" value="Registrarse">
+                        </form>
+                    </div>
+                </div>   
+            </div> 
         </div>
     </main>
     <footer class="bg-dark text-center text-white">

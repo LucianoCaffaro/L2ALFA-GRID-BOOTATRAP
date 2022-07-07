@@ -13,14 +13,17 @@ a{text-decoration: none;}
 
 body{overflow-x: hidden;}	
 
-
+.row{padding: 0;}
 
 
 
 /*BG-COLOR*//*BG-COLOR*//*BG-COLOR*//*BG-COLOR*//*BG-COLOR*//*BG-COLOR*//*BG-COLOR*//*BG-COLOR*/
 
 .bg-white{background-color: white;}
+
 .bg-gris{background-color: #111111;}
+
+.bg-gris-claro{background-color: #343434;}
 
 
 
@@ -36,10 +39,6 @@ body{overflow-x: hidden;}
 .text-violet{color: #AF33CA;}
 
 
-.row{
-	padding: 0;}
-
-
 
 
 
@@ -47,10 +46,8 @@ body{overflow-x: hidden;}
 /*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
 
 .foot{display: block;
-	width: 100vw;
-	height: 100%;
-	background-color: #111111;
-	}
+	width: 100%;
+	height: 100%;}
 
 .foot-h3{
 	padding-top: 20px;
@@ -108,12 +105,11 @@ body{overflow-x: hidden;}
 
 /*NAV BAR MIN-1200PX*//*NAV BAR MIN-1200PX*//*NAV BAR MIN-1200PX*//*NAV BAR MIN-1200PX*//*NAV BAR MIN-1200PX*//*NAV BAR MIN-1200PX*/
 
-.header{width: 100vw;
-		position: fixed;}
+.header{
+	width: 100%;
+	position: fixed;}	
 
-.vw{width: 100vw;}		
-
-.mg-button{margin-right: 20px;}
+.mg-button{margin-right: 40px;}
 
 .logo{
 		height: 60px;
@@ -131,9 +127,9 @@ body{overflow-x: hidden;}
 		background-color: #7E479E;
 		transition: 0.8s;}
 
-.nav-text-spacing{
-	margin-right: 20px;
-}	
+.nav-rep-text-center{text-align: center;}		
+
+
 
 
 
@@ -149,13 +145,13 @@ body{overflow-x: hidden;}
 /*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*/
 
 .img-inicio{padding-top: 35px;
-	width: 100vw;}
+	width: 100%;}
    
 .h1-index{font-size: 4rem;}
 
 .section-inicio{	
 		margin: 0;
-		width: 100vw;    
+		width: 100%;    
 	    text-align: center;
 	    font-size: 4rem;
 	    background: #343434;}
@@ -165,14 +161,11 @@ body{overflow-x: hidden;}
 
 .contenedor{
 		background-color: #B17BC8;
-		width: 100vw;
-		margin: 0;
-		padding: 0;}
+		width: 100%;}
 
 	.bloque{
 		display: flex;
-		align-items: center;
-		width: 33.33%;}		             
+		align-items: center;}		             
 
 		.bloque-img{font-size: 12rem;
 				margin-left: 40px;
@@ -184,7 +177,6 @@ body{overflow-x: hidden;}
 		width: 100%;}
 
 	.img-carousel{
-		height: 600px;
 		width: 100vw;
 		align-items: center;}	
 
@@ -198,9 +190,8 @@ body{overflow-x: hidden;}
 
 @media(max-width: 768px){
 	body {}
-.img-inicio {padding-top: 35px;}
 
-	.bloque{width: 100vw;}
+	}
 
 }
 
@@ -214,6 +205,32 @@ body{overflow-x: hidden;}
 
 
 /*INFO MIN-1200PX*//*INFO MIN-1200PX*//*INFO MIN-1200PX*//*INFO MIN-1200PX*//*INFO MIN-1200PX*//*INFO MIN-1200PX*//*INFO MIN-1200PX*/
+
+.inf-grid-header{
+	grid-area: inf-grid-header;
+}
+
+.inf-grid-main{
+	grid-area: inf-grid-main;
+}
+
+.inf-grid-aside{
+	grid-area: inf-grid-aside;
+}
+
+.inf-grid-footer{
+	grid-area: inf-grid-footer;
+}
+
+
+.inf-grid{
+	display: grid;
+	grid-template-columns: 80vw 20vw;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"inf-grid-header inf-grid-header"
+	"inf-grid-main inf-grid-aside"
+	"inf-grid-footer inf-grid-footer";}
 
 .inf-grid-main{
 		background-image: url(../img/info.jpg);
@@ -229,7 +246,6 @@ body{overflow-x: hidden;}
 .info-ul-li{margin-top: 40px;}
 
 .inf-grid-aside{	
-		background-color: #8D8D8D;
 		font-size: 1.5rem;}
 
 .inf-grid-section{
@@ -248,6 +264,16 @@ body{overflow-x: hidden;}
 
 @media(max-width: 1200px){
 	body{}
+
+	.inf-grid{
+	display: grid;
+	grid-template-columns: 100vw;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"inf-grid-header"
+	"inf-grid-main"
+	"inf-grid-aside"
+	"inf-grid-footer";}
 
 	.inf-grid-main{
 		width: 100vw;}
@@ -286,7 +312,6 @@ body{overflow-x: hidden;}
 		width: 80vw;}
 
 	.info-ul-li{font-size: 2rem;}
-
 
 }
 
@@ -329,8 +354,7 @@ body{overflow-x: hidden;}
 	.link-descargar:hover{
 		color: white;
 		background-color: #7E479E;
-		transition: 0.5s;
-	}	
+		transition: 0.5s;}	
 
 
 @media(max-width: 768px){
@@ -423,15 +447,6 @@ body{overflow-x: hidden;}
 }
 
 
-
-
-
-
-
-
-
-/*RE*/
-
 @media(max-width: 768px){
 	body{}
 	.section-recargar{
@@ -458,8 +473,8 @@ body{overflow-x: hidden;}
 		background-repeat: no-repeat;
 		background-position: end;
 		background-size: cover;
-		margin: 0px;
 		justify-content: center;
+		justify-items: center;
 
 		width: 100%;
 		height: 1600px;}
@@ -467,13 +482,13 @@ body{overflow-x: hidden;}
 
 
 .welcome-back{
-		padding-top: 350px;
-		display: flex;
-		text-align: center;
-		line-height: 8rem;}
+		padding-top: 250px;
+		text-align: center;}
 
 .message{
-		font-size: 2rem;}	
+		padding: 150px 0;
+		font-size: 2rem;	
+		line-height: 8rem}
 
 	.message-button{
 		color: white;
@@ -489,11 +504,11 @@ body{overflow-x: hidden;}
 	.message-button:hover{
 		background-color: #6CE3E2;}	
 
-
 		.formulario{
-			margin-top: 300px;
+			margin: auto;
+			line-height: 4rem;
 			width: 400px;
-			height: 35%;
+			height: 500px;
 			border-radius: 1rem;
 			background-color: rgba(51, 51, 51, 0.8);
 			text-align: center;}
@@ -509,10 +524,11 @@ body{overflow-x: hidden;}
 			padding: 2.5rem;}
 
 		.formulario input {	
-			font-size: 2rem;
+			width: 70%;
+			font-size: 1.5rem;
 			display: block;
 			margin: auto;
-			margin-bottom: 5rem;
+			margin-bottom: 2rem;
 			border-radius: 1rem;
 			background-color: white;
 			text-align: center;			
@@ -524,7 +540,7 @@ body{overflow-x: hidden;}
 			margin: auto;
 			margin-top: 30px;
 			border: solid thin white;
-			padding: 3rem;
+			padding: 2rem;
 			border-radius: 1rem;
 			cursor: pointer;}
 
@@ -532,16 +548,12 @@ body{overflow-x: hidden;}
 			background-color: ;background-color: #6CE3E2;
 			transition: 0.5s;}		
 
-
-@media(max-width 992px){
+@media(max-width: 1200px){
 	body{}
 
-	.welcome-back{padding-top: 150px;}
-
-	.formulario{
-			margin-top: 100px;}
-
+	.welcome-back{padding-top: 0;}
 }
+
 
 
 
@@ -643,145 +655,3 @@ body{overflow-x: hidden;}
 			background-color: ;background-color: #6CE3E2;
 			transition: 0.5s;}	
 */
-
-
-
-
-/*
-.main-ingresar{
-		background-image: url(../img/registrar.jpg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		margin: 0px;
-		padding: 80px 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		width: 100%;
-		height: 1200px;}
-
-	.container-reg{
-	  	width: 100vw;
-	  	height: 90vh;
-	  	display: flex;
-	  	justify-content: space-around;
-	  	transition: all .5s ease-out;}
-
-	.welcome-back{
-		display: flex;
-		align-items: center;
-		text-align: center;
-		line-height: 8rem;
-		height: 60%;}  
-
-	.message{
-		font-size: 2rem;}	
-
-	.message-button{
-		color: white;
-		padding: 2.5rem;
-		font-weight: 400;
-		border-radius: 2.5rem;
-		background-color: #7E479E;
-		cursor: pointer;
-		transition: all .5s;
-		border: none;
-		outline: none;}	
-
-	.message-button:hover{
-		background-color: #6CE3E2;}	
-
-
-		.formulario{
-			width: 400px;
-			height: 60%;
-			border-radius: 1rem;
-			padding: 1.5rem;
-			margin: 2rem;
-			background-color: rgba(51, 51, 51, 0.8);
-			text-align: center;}
-
-		.create-account{
-			padding: 4rem;
-			font-size: 3rem;
-			color: white;}
-
-		.cuenta-gratis{
-			font-size: 2rem;
-			color: white;
-			padding: 2.5rem;}
-
-		.formulario input {	
-			font-size: 2rem;
-			display: block;
-			width: 80%;
-			margin: auto;
-			margin-bottom: 5rem;
-			border-radius: 1rem;
-			background-color: white;
-			text-align: center;			
-			border: none;
-			border-bottom: white thin solid;}
-
-		.formulario input[type="button"]{
-			width: 60%;
-			margin: auto;
-			margin-top: 30px;
-			border: solid thin white;
-			padding: 3rem;
-			border-radius: 1rem;
-			cursor: pointer;}
-
-		.formulario input[type="button"]:hover{
-			background-color: ;background-color: #6CE3E2;
-			transition: 0.5s;}	
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*box model*//*justify-content: space-between;*/
-
-/*width; (ancho) ej 80% del quien lo contiene,recomendados para contenedores)*/
-
-/*height; (alto) se adapta segun su contenido*/
-
-/*margin; (margen de ls 4 lados)*/
-
-/*margin; 50px auto (arriba abajo 50px derecha-izquierda auto)*/
-
-/*padding ceparacion del texto dentro del contenedor
-ej : padding; 20px 20px*/
-
-/*border: (4 lados o especificar top-ringht-+2)  double deeppink 5px*/
-
-/*overflow: hidden(no muestra) vicible(muestra) scroll(barra para leer el contenido) 
-auto (si se desborda pone scroll si no, no)
-overflow-x: auto;
-overflow-y:  scroll;)*/
-
-
-
