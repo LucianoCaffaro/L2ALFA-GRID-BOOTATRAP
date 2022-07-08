@@ -1,0 +1,24 @@
+{
+  "name": "l2alfa-bootstrap",
+  "version": "1.0.0",
+  "description": "Mi repo github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1","build-css": "node-sass --include-path scss scss/index.scss src/style.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoCaffaro/L2ALFA-GRID-BOOTATRAP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucianoCaffaro/L2ALFA-GRID-BOOTATRAP/issues"
+  },
+  "homepage": "https://github.com/LucianoCaffaro/L2ALFA-GRID-BOOTATRAP#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
