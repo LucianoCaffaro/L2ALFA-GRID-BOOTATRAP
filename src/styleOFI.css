@@ -186,17 +186,6 @@ body{overflow-x: hidden;}
 
 
 
-/*INICIO MAX-768PX*//*INICIO MAX-768PX*//*INICIO MAX-768PX*//*INICIO MAX-768PX*//*INICIO MAX-768PX*//*INICIO MAX-768PX*//*INICIO MAX-768PX*/
-
-@media(max-width: 768px){
-	body {}
-
-	}
-
-}
-
-
-
 
 
 
@@ -545,7 +534,7 @@ body{overflow-x: hidden;}
 			cursor: pointer;}
 
 		.formulario input[type="button"]:hover{
-			background-color: ;background-color: #6CE3E2;
+			background-color: #6CE3E2;
 			transition: 0.5s;}		
 
 @media(max-width: 1200px){

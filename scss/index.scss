@@ -1,2 +1,58 @@
-background-color: white;
-color: white;
+@import "variables";
+@import "navBar";
+@import "info";
+@import "descargar";
+@import "recargar";
+@import "ingresar-reg";
+
+
+
+/*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*//*INICIO MIN-1200PX*/
+   
+.h1-index{font-size: 4rem;}
+
+.section-inicio{	
+	margin: 0;
+	width: 100%;    
+	text-align: center;
+	font-size: 4rem;
+	background: #343434;
+	    div img{padding-top: 35px;
+		width: 100%;}
+		h1{color: $textDorado;
+			font-size: 4rem;}
+		p{color: $textWhite;}
+		a{color: $textDorado;}
+		a:hover{color: $textRed;}
+	}
+
+.img-carousel{
+	width: 100vw;
+	align-items: center;}
+	
+
+.contenedor{
+	background-color: $bgViolet;
+	width: 100%;
+	section div{display: flex;
+		align-items: center;}
+	section div h2{font-size: 12rem;
+		margin-left: 40px;
+		color: $textWhite;
+		width: 100%;}
+		section div div{display: block;
+			line-height: 4rem;}
+			section div div ul{line-height: 3rem;}
+
+}
+
+	.texto-inicio{font-size: 2rem;
+		margin: 30px 20px;
+		width: 100%;}	
+
+	.caroulseText{font-size: 2rem;}
+
+
+
+
+

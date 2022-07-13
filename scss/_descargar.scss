@@ -1,0 +1,43 @@
+/*DESCARGAR MIN-1200PX*//*DESCARGAR MIN-1200PX*/
+
+.section-descargar{
+		background-image: url(../img/descargar.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		margin: 0px;
+		text-align: left;
+		padding: 180px;
+		line-height: 80px;
+		font-size: 2.5rem;
+		color: white;
+		width: 100vw;
+		height: 1200px;}
+
+.link-descargar{text-align: center;
+		font-size: 6rem;
+		color: red;
+		padding: 30px;
+		border-radius: 2rem;}
+
+
+	.link-descargar:hover{
+		color: white;
+		background-color: #7E479E;
+		transition: 0.5s;}	
+
+
+@media(max-width: 768px){
+	body{}
+	.section-descargar{
+		line-height: 60px;
+		font-size: 2rem;
+		padding: 120px 60px;}
+
+	.link-descargar{
+		font-size: 4rem;
+		color: red;
+		padding: 30px;
+		border-radius: 2rem;
+		align-items: center;}	
+}

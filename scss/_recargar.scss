@@ -1,0 +1,67 @@
+/*RECARGAR MIN-1200PX*//*RECARGAR MIN-1200PX*/
+
+.main-recargar{
+		background-image: url(../img/recargar.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin: 0px;
+		width: 100%;}	
+
+
+.section-recargar{
+		font-size: 2rem;
+		width: 75%;
+		padding: 100px 100px;
+		line-height: 50px;}
+
+.section-recargar-tab{
+		padding: 0 100px 300px 100px;
+		width: 75%;
+		font-size: 2rem;
+		line-height: 80px;
+}		
+
+.recargar-table{
+		font-size: 2rem;
+		width: 100%;
+		padding: 0;
+		line-height: 80px;}
+
+	.recargar-tr{
+		text-align: center;}
+
+	.recargar-td{
+		text-align: center;
+		background-color: #8DD8B4;}
+
+	.recargar-tht{
+		background-color: #9FC9D9;
+	}	
+
+	.recargar-th{
+		background-color: #CCA6E2;}	
+
+.section-recargar-form{
+	width: 75%;}
+
+.section-fieldset{
+	font-size: 2.5rem;
+	display: block;
+	padding: 40px;
+	text-align: center;}
+
+.section-fieldset input,label {
+	line-height: 40px;
+}
+
+
+@media(max-width: 768px){
+	body{}
+	.section-recargar{
+		width: 100%;}
+
+		.section-recargar-tab{
+			width: 100%;
+			font-size: 1rem;}
+}

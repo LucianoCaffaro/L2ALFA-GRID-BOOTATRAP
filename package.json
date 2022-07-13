@@ -4,8 +4,10 @@
   "description": "Mi repo github",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1","build-css": "node-sass --include-path scss scss/index.scss src/style.css",
-    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss src/style.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "compile-sass": "sass --watch scss/index.scss src/style.css"
   },
   "repository": {
     "type": "git",
