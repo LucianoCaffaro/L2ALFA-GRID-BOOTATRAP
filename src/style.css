@@ -50,6 +50,56 @@ body {
   .header nav div ul li ul {
     background-color: #111111; }
 
+/*INICIO MIN-1200PX*/
+/*INICIO MIN-1200PX*/
+.section-inicio {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  background: #343434; }
+  .section-inicio img {
+    padding-top: 35px;
+    width: 100%; }
+  .section-inicio h1 {
+    color: #FFCC00;
+    font-size: 4rem; }
+  .section-inicio p {
+    color: white; }
+  .section-inicio a {
+    color: #FFCC00; }
+  .section-inicio a:hover {
+    color: red; }
+
+.img-carousel {
+  width: 100vw;
+  align-items: center; }
+
+.contenedor {
+  background-color: #B17BC8;
+  width: 100%; }
+  .contenedor section div {
+    display: flex;
+    align-items: center; }
+  .contenedor div div {
+    display: block;
+    line-height: 3rem; }
+  .contenedor h2 {
+    font-size: 12rem;
+    margin: 30px;
+    color: white;
+    width: 100%; }
+  .contenedor h3, .contenedor p {
+    font-size: 2rem;
+    margin: 30px 0px;
+    width: 100%; }
+  .contenedor ul {
+    line-height: 3rem;
+    font-size: 2rem; }
+
+.caroulseText {
+  font-size: 2rem; }
+
 /*INFO MIN-1200PX*/
 /*INFO MIN-1200PX*/
 .inf-grid-header {
@@ -75,30 +125,35 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0px;
   height: 1200px;
-  padding: 200px 100px;
-  font-size: 3rem;
-  line-height: 6rem; }
-
-.info-ul-li {
-  margin-top: 40px; }
+  padding: 150px 100px;
+  line-height: 4rem; }
+  .inf-grid-main h1 {
+    font-size: 4rem;
+    color: red; }
+  .inf-grid-main li {
+    margin-top: 40px;
+    font-size: 2.5rem; }
+  .inf-grid-main a {
+    color: red; }
+  .inf-grid-main aside {
+    font-size: 1.5rem;
+    margin-top: 200px; }
+  .inf-grid-main aside section {
+    padding-top: 200px;
+    display: block;
+    justify-content: space-between; }
 
 .inf-grid-aside {
-  font-size: 1.5rem; }
+  padding-top: 100px; }
 
-.inf-grid-section {
-  margin: 120px 20px;
-  display: block;
-  justify-content: space-between; }
+.inf-h2 {
+  text-align: center; }
 
 .inf-margin {
   margin: 20% 10%;
   width: 80%;
   height: 24vh; }
-
-.inf-h2 {
-  text-align: center; }
 
 @media (max-width: 1200px) {
   .inf-grid {
@@ -110,10 +165,11 @@ body {
     width: 100vw; }
   .inf-grid-aside {
     width: 100vw;
-    flex-direction: column; }
-  .inf-grid-section {
-    display: flex;
-    justify-content: center; }
+    flex-direction: column;
+    padding: 50px 0px; }
+    .inf-grid-aside section {
+      display: flex;
+      justify-content: center; }
   .inf-margin {
     margin: 0;
     width: 45vw; } }
@@ -121,57 +177,46 @@ body {
 @media (max-width: 992px) {
   .inf-grid-main {
     padding: 150px 50px;
-    font-size: 2.5rem; } }
-
-@media (max-width: 576px) {
-  .inf-grid-section {
-    display: block;
-    justify-content: center; }
-  .inf-margin {
-    margin: 10% 5%;
-    width: 80vw; }
-  .info-ul-li {
-    font-size: 2rem; } }
+    font-size: 2rem;
+    line-height: 2rem; } }
 
 /*DESCARGAR MIN-1200PX*/
 /*DESCARGAR MIN-1200PX*/
-.section-descargar {
+.sectionDescargar {
   background-image: url(../img/descargar.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
   margin: 0px;
   text-align: left;
-  padding: 180px;
+  padding: 140px 100px;
   line-height: 80px;
   font-size: 2.5rem;
   color: white;
   width: 100vw;
   height: 1200px; }
-
-.link-descargar {
-  text-align: center;
-  font-size: 6rem;
-  color: red;
-  padding: 30px;
-  border-radius: 2rem; }
-
-.link-descargar:hover {
-  color: white;
-  background-color: #7E479E;
-  transition: 0.5s; }
-
-@media (max-width: 768px) {
-  .section-descargar {
-    line-height: 60px;
-    font-size: 2rem;
-    padding: 120px 60px; }
-  .link-descargar {
-    font-size: 4rem;
+  .sectionDescargar a {
+    text-align: center;
+    font-size: 3rem;
     color: red;
     padding: 30px;
-    border-radius: 2rem;
-    align-items: center; } }
+    border-radius: 2rem; }
+    .sectionDescargar a:hover {
+      color: white;
+      background-color: #7E479E;
+      transition: 0.5s; }
+  @media (max-width: 768px) {
+    .sectionDescargar {
+      padding: 150px 40px; }
+      .sectionDescargar li {
+        line-height: 60px;
+        font-size: 2rem; }
+      .sectionDescargar a {
+        font-size: 2rem;
+        color: red;
+        padding: 20px;
+        border-radius: 2rem;
+        align-items: center; } }
 
 /*RECARGAR MIN-1200PX*/
 /*RECARGAR MIN-1200PX*/
@@ -182,56 +227,35 @@ body {
   background-position: center;
   margin: 0px;
   width: 100%; }
-
-.section-recargar {
-  font-size: 2rem;
-  width: 75%;
-  padding: 100px 100px;
-  line-height: 50px; }
-
-.section-recargar-tab {
-  padding: 0 100px 300px 100px;
-  width: 75%;
-  font-size: 2rem;
-  line-height: 80px; }
-
-.recargar-table {
-  font-size: 2rem;
-  width: 100%;
-  padding: 0;
-  line-height: 80px; }
-
-.recargar-tr {
-  text-align: center; }
-
-.recargar-td {
-  text-align: center;
-  background-color: #8DD8B4; }
-
-.recargar-tht {
-  background-color: #9FC9D9; }
-
-.recargar-th {
-  background-color: #CCA6E2; }
-
-.section-recargar-form {
-  width: 75%; }
-
-.section-fieldset {
-  font-size: 2.5rem;
-  display: block;
-  padding: 40px;
-  text-align: center; }
-
-.section-fieldset input, label {
-  line-height: 40px; }
-
-@media (max-width: 768px) {
-  .section-recargar {
-    width: 100%; }
-  .section-recargar-tab {
+  .main-recargar section {
+    font-size: 2rem;
+    width: 75%;
+    padding: 100px 100px;
+    line-height: 50px; }
+  .main-recargar div {
+    padding: 0 100px 300px 100px;
+    width: 75%;
+    font-size: 2rem;
+    line-height: 80px; }
+  .main-recargar table {
+    font-size: 2rem;
     width: 100%;
-    font-size: 1rem; } }
+    padding: 0;
+    line-height: 80px; }
+  .main-recargar tr {
+    text-align: center; }
+  .main-recargar th {
+    background-color: #CCA6E2; }
+  .main-recargar td {
+    background-color: #8DD8B4; }
+  .main-recargar th, .main-recargar td {
+    text-align: center; }
+  @media (max-width: 768px) {
+    .main-recargar section {
+      width: 100%; }
+    .main-recargar div {
+      width: 100%;
+      font-size: 1rem; } }
 
 /*INGRESAR MIN-1200PX*/
 /*INGRESAR MIN-1200PX*/
@@ -248,131 +272,64 @@ body {
   justify-items: center;
   width: 100%;
   height: 1600px; }
-
-.welcome-back {
-  padding-top: 250px;
-  text-align: center; }
-
-.message {
-  padding: 150px 0;
-  font-size: 2rem;
-  line-height: 8rem; }
-
-.message-button {
-  color: white;
-  padding: 2.5rem;
-  font-weight: 400;
-  border-radius: 2.5rem;
-  background-color: #7E479E;
-  cursor: pointer;
-  transition: all .5s;
-  border: none;
-  outline: none; }
-
-.message-button:hover {
-  background-color: #6CE3E2; }
-
-.formulario {
-  margin: auto;
-  line-height: 4rem;
-  width: 400px;
-  height: 500px;
-  border-radius: 1rem;
-  background-color: rgba(51, 51, 51, 0.8);
-  text-align: center; }
-
-.create-account {
-  padding: 4rem;
-  font-size: 3rem;
-  color: white; }
-
-.cuenta-gratis {
-  font-size: 2rem;
-  color: white;
-  padding: 2.5rem; }
-
-.formulario input {
-  width: 70%;
-  font-size: 1.5rem;
-  display: block;
-  margin: auto;
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-  background-color: white;
-  text-align: center;
-  border: none;
-  border-bottom: white thin solid; }
-
-.formulario input[type="button"] {
-  margin: auto;
-  margin-top: 30px;
-  border: solid thin white;
-  padding: 2rem;
-  border-radius: 1rem;
-  cursor: pointer; }
-
-.formulario input[type="button"]:hover {
-  background-color: #6CE3E2;
-  transition: 0.5s; }
-
-@media (max-width: 1200px) {
-  .welcome-back {
-    padding-top: 0; } }
-
-/*INICIO MIN-1200PX*/
-/*INICIO MIN-1200PX*/
-/*INICIO MIN-1200PX*/
-/*INICIO MIN-1200PX*/
-/*INICIO MIN-1200PX*/
-/*INICIO MIN-1200PX*/
-/*INICIO MIN-1200PX*/
-.h1-index {
-  font-size: 4rem; }
-
-.section-inicio {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 4rem;
-  background: #343434; }
-  .section-inicio div img {
-    padding-top: 35px;
-    width: 100%; }
-  .section-inicio h1 {
-    color: #FFCC00;
-    font-size: 4rem; }
-  .section-inicio p {
-    color: white; }
-  .section-inicio a {
-    color: #FFCC00; }
-  .section-inicio a:hover {
-    color: red; }
-
-.img-carousel {
-  width: 100vw;
-  align-items: center; }
-
-.contenedor {
-  background-color: #B17BC8;
-  width: 100%; }
-  .contenedor section div {
-    display: flex;
-    align-items: center; }
-  .contenedor section div h2 {
-    font-size: 12rem;
-    margin-left: 40px;
+  .main-ingresar div div {
+    padding-top: 250px;
+    text-align: center; }
+  .main-ingresar div div div {
+    padding: 0;
+    font-size: 2rem;
+    line-height: 8rem; }
+  .main-ingresar div div div a {
     color: white;
-    width: 100%; }
-  .contenedor section div div {
+    padding: 2.5rem;
+    font-weight: 400;
+    border-radius: 2.5rem;
+    background-color: #7E479E;
+    cursor: pointer;
+    transition: all .5s;
+    border: none;
+    outline: none; }
+    .main-ingresar div div div a:hover {
+      background-color: #6CE3E2; }
+  .main-ingresar form {
+    margin: auto;
+    line-height: 4rem;
+    width: 400px;
+    height: 500px;
+    border-radius: 1rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    text-align: center; }
+  .main-ingresar h2 {
+    padding: 4rem;
+    font-size: 3rem;
+    color: white; }
+  .main-ingresar form p {
+    font-size: 2rem;
+    color: white;
+    padding: 2.5rem; }
+  .main-ingresar form input {
+    width: 70%;
+    font-size: 1.5rem;
     display: block;
-    line-height: 4rem; }
-  .contenedor section div div ul {
-    line-height: 3rem; }
-
-.texto-inicio {
-  font-size: 2rem;
-  margin: 30px 20px;
-  width: 100%; }
-
-.caroulseText {
-  font-size: 2rem; }
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-bottom: white thin solid; }
+  .main-ingresar form input[type="button"] {
+    margin: auto;
+    margin-top: 30px;
+    border: solid thin white;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer; }
+    .main-ingresar form input[type="button"]:hover {
+      background-color: #6CE3E2;
+      transition: 0.5s; }
+  @media (max-width: 1200px) {
+    .main-ingresar div div {
+      padding-top: 0; }
+    .main-ingresar div div div {
+      padding-top: 200px; } }
