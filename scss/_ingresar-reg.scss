@@ -1,70 +1,72 @@
 /*INGRESAR MIN-1200PX*//*INGRESAR MIN-1200PX*//*INGRESAR MIN-1200PX*//*INGRESAR MIN-1200PX*//*INGRESAR MIN-1200PX*//*INGRESAR MIN-1200PX*/
 
 .main-ingresar{
-		background-image: url(../img/registrar.jpg);
-		background-repeat: no-repeat;
-		background-position: end;
-		background-size: cover;
-		justify-content: center;
-		justify-items: center;
+	background-image: url(../img/registrar.jpg);
+	background-repeat: no-repeat;
+	background-position: end;
+	background-size: cover;
+	justify-content: center;
+	justify-items: center;
 
-		width: 100%;
-		height: 1600px;
+	width: 100%;
+	height: 1600px;
 
-		div div{padding-top: 250px;
-			text-align: center;}
+	div div{padding-top: 250px;
+		text-align: center;}
 
-			div div div{padding: 0;
-				font-size: 2rem;	
-				line-height: 8rem}
+		div div div{padding: 0;
+			font-size: 2rem;	
+			line-height: 8rem}
 
-				div div div a{color: white;
-					padding: 2.5rem;
-					font-weight: 400;
-					border-radius: 2.5rem;
-					background-color: #7E479E;
-					cursor: pointer;
-					transition: all .5s;
-					border: none;
-					outline: none;
-						&:hover{background-color: #6CE3E2;}
-				}
-		form{margin: auto;
-			line-height: 4rem;
-			width: 400px;
-			height: 500px;
-			border-radius: 1rem;
-			background-color: rgba(51, 51, 51, 0.8);
-			text-align: center;}
+			div div div a{color: $textWhite;
+				padding: 2.5rem;
+				font-weight: 400;
+				border-radius: 2.5rem;
+				background-color: $bgVioletNav;
+				cursor: pointer;
+				transition: all .5s;
+				border: none;
+				outline: none;
+					&:hover{background-color: #6CE3E2;}
+			}
+
+	form{margin: auto;
+		line-height: 4rem;
+		width: 400px;
+		height: 500px;
+		border-radius: 1rem;
+		background-color: rgba(51, 51, 51, 0.8);
+		text-align: center;}
 			
-			h2{padding: 4rem;
-				font-size: 3rem;
-				color: white;}
+		h2{padding: 4rem;
+			font-size: 3rem;
+			color: $textWhite;}
 
-			form p{font-size: 2rem;
-				color: white;
-				padding: 2.5rem;}
+		form p{font-size: 2rem;
+			color: $textWhite;
+			padding: 2.5rem;}
 
-				form input{width: 70%;
-					font-size: 1.5rem;
-					display: block;
-					margin: auto;
-					margin-bottom: 2rem;
+			form input{width: 70%;
+				font-size: 1.5rem;
+				display: block;
+				margin: auto;
+				margin-bottom: 2rem;
+				border-radius: 1rem;
+				background-color: white;
+				text-align: center;			
+				border: none;
+				border-bottom: white thin solid;}
+
+				form input[type="button"]{margin: auto;
+					margin-top: 30px;
+					border: solid thin white;
+					padding: 2rem;
 					border-radius: 1rem;
-					background-color: white;
-					text-align: center;			
-					border: none;
-					border-bottom: white thin solid;}
-
-					form input[type="button"]{margin: auto;
-						margin-top: 30px;
-						border: solid thin white;
-						padding: 2rem;
-						border-radius: 1rem;
-						cursor: pointer;
-							&:hover{background-color: #6CE3E2;
-							transition: 0.5s;}
-					}
+					cursor: pointer;
+						&:hover{background-color: #6CE3E2;
+						transition: 0.5s;}
+				}
+				
 		@media(max-width: 1200px){
 			body{}
 

@@ -13,6 +13,8 @@
 		padding: 100px 100px;
 		line-height: 50px;}
 
+		h1{color: $textDorado;}
+
 	div{padding: 0 100px 300px 100px;
 		width: 75%;
 		font-size: 2rem;
@@ -24,8 +26,8 @@
 		line-height: 80px;}
 
 			tr{text-align: center;}
-			th{background-color: #CCA6E2;}
-			td{background-color: #8DD8B4;}
+			th{background-color: $bgViolet;}
+			td{background-color: $bgAguamarine;}
 			th,td{text-align: center;}
 
 	@media(max-width: 768px){

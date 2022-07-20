@@ -5,11 +5,12 @@
 	width: 100%;    
 	text-align: center;
 	font-size: 4rem;
-	background: #343434;
+	background: $bgGrisClaro;
+
 	    img{padding-top: 35px;
 		width: 100%;}
-		h1{color: $textDorado;
-			font-size: 4rem;}
+		h1{color: $textDorado;			
+			font-size: 4rem;}			
 		p{color: $textWhite;}
 		a{color: $textDorado;}
 		a:hover{color: $textRed;}
@@ -23,10 +24,12 @@
 .contenedor{
 	background-color: $bgViolet;
 	width: 100%;
-	section div{display: flex;
-		align-items: center;}
+
+	section div{@include d-flex(none,center)}
+
 		div div{display: block;
 			line-height: 3rem;}
+
 			h2{font-size: 12rem;
 				margin: 30px;
 				color: $textWhite;
@@ -38,6 +41,4 @@
 				font-size: 2rem;}
 }
 
-	
-
-.caroulseText{font-size: 2rem;}
+	.caroulseText{font-size: 2rem;}

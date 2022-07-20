@@ -16,6 +16,26 @@ body{overflow-x: hidden;}
 .row{padding: 0;}
 
 
+//maps
+$paleta:(
+
+'white': white,
+
+'grisClaro': #343434,
+
+'gris': #111111,
+
+'Aguamarine': #8DD8B4,
+
+'violet': #B17BC8,
+
+'violetNav': #7E479E,
+
+'dorado': #FFCC00,
+);
+
+
+
 
 /*BG-COLOR*//*BG-COLOR*/
 
@@ -27,10 +47,12 @@ $bgViolet: #B17BC8;
 
 $bgVioletNav: #7E479E;
 
+$bgAguamarine: #8DD8B4;
 
 
 
 /*TEXT-COLOR*//*TEXT-COLOR*/
+
 $textWhite: white;
 
 $textDorado: #FFCC00;
