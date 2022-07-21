@@ -18,10 +18,39 @@ body {
 .row {
   padding: 0; }
 
-/*BG-COLOR*/
-/*BG-COLOR*/
-/*TEXT-COLOR*/
-/*TEXT-COLOR*/
+.bgGris {
+  background-color: #111111; }
+
+.bgGrisCl {
+  background-color: #343434; }
+
+.bgViolet {
+  background-color: #B17BC8; }
+
+.bgVioletOs {
+  background-color: #7E479E; }
+
+.bgEsmerald {
+  background-color: #8DD8B4; }
+
+.bgAguamarine {
+  background-color: #6CE3E2; }
+
+.textWhit {
+  color: white; }
+
+.textDorad {
+  color: #FFCC00; }
+
+.textRed {
+  color: red; }
+
+.textViolet {
+  color: #B17BC8; }
+
+.textBlack {
+  color: black; }
+
 /*mixins-extends-maps-mass*/
 .liFs, .liJustItems {
   font-size: 2rem;
@@ -91,11 +120,29 @@ body {
 .size-20 {
   font-size: 10rem; }
 
+.facebook-icon {
+  background-image: url(../img/facebook.png);
+  width: 30px;
+  height: 30px;
+  list-style: none; }
+
+.discord-icon {
+  background-image: url(../img/discord.png);
+  width: 30px;
+  height: 30px;
+  list-style: none; }
+
+.youtube-icon {
+  background-image: url(../img/youtube.png);
+  width: 30px;
+  height: 30px;
+  list-style: none; }
+
 /*.iconLang{
 	width: 50px;
 	height: 50px;
-	@if $lang==es{background-image: url(..img/es.png;)};
-	@else if $lang==en{background-image: url(..img/en.png;)};
+	@if $lang==es{background-image: url(..img/es.png)}
+	@else if $lang==en{background-image: url(..img/en.png)}
 	@else{background-image: url(..img/en.png;)};
 }
 */
@@ -118,14 +165,11 @@ body {
     padding-right: 20px; }
   .header nav div ul li a {
     padding: 10px;
-    color: white;
     text-decoration: none;
     border-radius: 15px; }
     .header nav div ul li a:hover {
       background-color: #7E479E;
       transition: 0.8s; }
-  .header nav div ul li ul {
-    background-color: #111111; }
 
 /*INICIO MIN-1200PX*/
 /*INICIO MIN-1200PX*/
@@ -134,7 +178,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 4rem;
-  background: #343434; }
+  background-color: #343434; }
   .section-inicio img {
     padding-top: 35px;
     width: 100%; }

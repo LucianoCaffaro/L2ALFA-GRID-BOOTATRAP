@@ -17,49 +17,71 @@ body{overflow-x: hidden;}
 
 
 //maps
+
 $paleta:(
 
-'white': white,
+'blanco': white,
 
 'grisClaro': #343434,
 
 'gris': #111111,
 
-'Aguamarine': #8DD8B4,
+'esmeralda': #8DD8B4,
+
+'aguamarine': #6CE3E2,
 
 'violet': #B17BC8,
 
-'violetNav': #7E479E,
+'violetOscuro': #7E479E,
 
 'dorado': #FFCC00,
+
+'rojo': red,
+
+'black': black,
 );
 
 
 
 
-/*BG-COLOR*//*BG-COLOR*/
+//BG-COLOR  BG-COLOR
 
-$bgGris: #111111;
+.bgGris{
+	background-color: map-get($map:$paleta, $key: 'gris')}
 
-$bgGrisClaro: #343434;
+.bgGrisCl{
+	background-color: map-get($map:$paleta, $key: 'grisClaro')}
 
-$bgViolet: #B17BC8;
+.bgViolet{
+	background-color: map-get($map:$paleta, $key: 'violet')}
 
-$bgVioletNav: #7E479E;
+.bgVioletOs{
+	background-color: map-get($map:$paleta, $key: 'violetOscuro')}
 
-$bgAguamarine: #8DD8B4;
+.bgEsmerald{
+	background-color: map-get($map:$paleta, $key: 'esmeralda')}
+
+.bgAguamarine{
+	background-color: map-get($map:$paleta, $key: 'aguamarine')}	
 
 
 
-/*TEXT-COLOR*//*TEXT-COLOR*/
+//TEXT-COLOR  TEXT-COLOR
 
-$textWhite: white;
+.textWhit{
+	color: map-get($map:$paleta, $key: 'blanco');}
 
-$textDorado: #FFCC00;
+.textDorad{
+	color: map-get($map:$paleta, $key: 'dorado')}
 
-$textRed: red;
+.textRed{
+	color: map-get($map:$paleta, $key: 'rojo')}
 
-$textViolet: #AF33CA;
+.textViolet{
+	color: map-get($map:$paleta, $key: 'violet')}
 
 $textBlack: black;
+.textBlack{
+	color: map-get($map:$paleta, $key: 'black')}
+
 

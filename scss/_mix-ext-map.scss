@@ -38,6 +38,16 @@
 	}
 }
 
+//bucle evolucionado
+
+@each $icon in facebook, discord, youtube{
+	.#{$icon}-icon{
+		background-image: url(../img/#{$icon}.png);
+		width: 30px;
+		height: 30px;
+		list-style: none;
+	}
+}
 
 
 //condicionales
@@ -45,8 +55,8 @@
 /*.iconLang{
 	width: 50px;
 	height: 50px;
-	@if $lang==es{background-image: url(..img/es.png;)};
-	@else if $lang==en{background-image: url(..img/en.png;)};
+	@if $lang==es{background-image: url(..img/es.png)}
+	@else if $lang==en{background-image: url(..img/en.png)}
 	@else{background-image: url(..img/en.png;)};
 }
 */

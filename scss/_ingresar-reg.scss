@@ -18,16 +18,16 @@
 			font-size: 2rem;	
 			line-height: 8rem}
 
-			div div div a{color: $textWhite;
+			div div div a{color: map-get($map:$paleta, $key: 'blanco');
 				padding: 2.5rem;
 				font-weight: 400;
 				border-radius: 2.5rem;
-				background-color: $bgVioletNav;
+				background-color: map-get($map:$paleta, $key: 'violetOscuro');
 				cursor: pointer;
 				transition: all .5s;
 				border: none;
 				outline: none;
-					&:hover{background-color: #6CE3E2;}
+					&:hover{background-color: map-get($map:$paleta, $key: 'aguamarine');}
 			}
 
 	form{margin: auto;
@@ -40,10 +40,10 @@
 			
 		h2{padding: 4rem;
 			font-size: 3rem;
-			color: $textWhite;}
+			color: map-get($map:$paleta, $key: 'blanco');}
 
 		form p{font-size: 2rem;
-			color: $textWhite;
+			color: map-get($map:$paleta, $key: 'blanco');
 			padding: 2.5rem;}
 
 			form input{width: 70%;
@@ -63,7 +63,7 @@
 					padding: 2rem;
 					border-radius: 1rem;
 					cursor: pointer;
-						&:hover{background-color: #6CE3E2;
+						&:hover{background-color: map-get($map:$paleta, $key: 'aguamarine');
 						transition: 0.5s;}
 				}
 				

@@ -10,19 +10,19 @@
 	padding: 140px 100px;
 	line-height: 80px;
 	font-size: 2.5rem;
-	color: $textWhite;
+	color: map-get($map:$paleta, $key: 'blanco');
 	width: 100vw;
 	height: 1200px;
 
-	h1{color: $textRed;}
+	h1{color: map-get($map:$paleta, $key: 'rojo');}
 
 	a{text-align: center;
 		font-size: 3rem;
-		color: $textRed;
+		color: map-get($map:$paleta, $key: 'rojo');
 		padding: 30px;
 		border-radius: 2rem;
-		&:hover{color: $textWhite;
-		background-color: $bgVioletNav;
+		&:hover{color: map-get($map:$paleta, $key: 'blanco');
+		background-color: map-get($map:$paleta, $key: 'violetOscuro');
 		transition: 0.5s;}}
 
 	@media(max-width: 768px){
@@ -34,7 +34,7 @@
 			font-size: 2rem;}
 
 			a{font-size: 2rem;
-				color: $textRed;
+				color: map-get($map:$paleta, $key: 'rojo');
 				padding: 20px;
 				border-radius: 2rem;
 				align-items: center;}

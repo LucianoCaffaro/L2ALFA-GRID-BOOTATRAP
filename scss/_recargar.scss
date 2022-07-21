@@ -13,7 +13,7 @@
 		padding: 100px 100px;
 		line-height: 50px;}
 
-		h1{color: $textDorado;}
+		h1{color: map-get($map:$paleta, $key: 'dorado');}
 
 	div{padding: 0 100px 300px 100px;
 		width: 75%;
@@ -26,8 +26,8 @@
 		line-height: 80px;}
 
 			tr{text-align: center;}
-			th{background-color: $bgViolet;}
-			td{background-color: $bgAguamarine;}
+			th{background-color: map-get($map:$paleta, $key: 'violet');}
+			td{background-color: map-get($map:$paleta, $key: 'esmeralda');}
 			th,td{text-align: center;}
 
 	@media(max-width: 768px){
