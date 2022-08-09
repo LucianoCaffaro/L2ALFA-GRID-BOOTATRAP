@@ -24,7 +24,20 @@
 	grid-template-areas: 
 	"inf-grid-header inf-grid-header"
 	"inf-grid-main inf-grid-aside"
-	"inf-grid-footer inf-grid-footer";}
+	"inf-grid-footer inf-grid-footer";
+
+	@media(max-width: 1200px){
+
+		display: grid;
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"inf-grid-header"
+		"inf-grid-main"
+		"inf-grid-aside"
+		"inf-grid-footer";	
+	}
+}
 
 .inf-grid-main{
 	background-image: url(../img/info.jpg);
@@ -35,13 +48,26 @@
 	padding: 150px 100px;
 	line-height: 4rem;
 
+	@media(max-width: 1200px){
+		width: 100vw;
+	}
+
+	@media(max-width: 992px){
+		padding: 150px 50px;
+		font-size: 2rem;
+		line-height: 2rem;		
+	}
+
 	h1{font-size: 4rem;
 		color: map-get($map:$paleta, $key: 'rojo');}
 
 	li{margin-top: 40px;
-		font-size: 2.5rem;}
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 2px dodgerblue;}
 
-		a{color: map-get($map:$paleta, $key: 'rojo');}
+		a{color: map-get($map:$paleta, $key: 'violet');
+			text-transform: none;}
 
 	aside{font-size: 1.5rem;
 		margin-top: 200px;}
@@ -52,51 +78,21 @@
 			justify-content: space-between;}
 }
 
-	.inf-grid-aside{padding-top: 100px;}
+	.inf-grid-aside{padding-top: 100px;
+		@media(max-width: 1200px){
+			width: 100vw;
+			flex-direction: column;
+			padding: 50px 0px;
+			section{display: flex;
+			justify-content: center;}}
+	}
 
 	.inf-h2{text-align: center;}
 
 	.inf-margin{margin: 20% 10%;
 		width: 80%;
-		height: 24vh;}
-
-@media(max-width: 1200px){
-	body{}
-
-	.inf-grid{
-	display: grid;
-	grid-template-columns: 100vw;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"inf-grid-header"
-	"inf-grid-main"
-	"inf-grid-aside"
-	"inf-grid-footer";}
-
-	.inf-grid-main{
-		width: 100vw;}
-
-		.inf-grid-aside{width: 100vw;
-		flex-direction: column;
-		padding: 50px 0px;
-
-		section{display: flex;
-		justify-content: center;}
+		height: 24vh;
+		@media(max-width: 1200px){
+			margin: 0;
+			width: 45vw;}
 	}
-
-	.inf-margin{margin: 0;
-		width: 45vw;}
-}
-
-
-
-
-@media(max-width: 992px){
-	body{}
-	
-	.inf-grid-main{
-		padding: 150px 50px;
-		font-size: 2rem;
-		line-height: 2rem;}		
-
-}

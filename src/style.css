@@ -170,6 +170,47 @@ body {
     .header nav div ul li a:hover {
       background-color: #7E479E;
       transition: 0.8s; }
+  .header nav div ul li {
+    background-color: #111111; }
+  .header nav div ul li a ul li a {
+    background-color: #111111; }
+
+footer {
+  display: block;
+  width: 100vw;
+  height: 100%;
+  background-color: #111111; }
+  footer h3 {
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 2rem; }
+  footer div {
+    display: flex;
+    width: 100vw;
+    justify-content: center; }
+  footer .footer {
+    margin: 40px;
+    height: 50px;
+    width: 50px; }
+  footer .foot-img {
+    width: 200px;
+    height: 100px;
+    margin: 0 50px; }
+  footer section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0; }
+  footer .text-legal {
+    font-size: 1.5rem; }
+  footer .white {
+    color: white; }
+
+@media (max-width: 768px) {
+  .inFootImg {
+    display: block;
+    justify-content: center; } }
 
 /*INICIO MIN-1200PX*/
 /*INICIO MIN-1200PX*/
@@ -241,6 +282,12 @@ body {
   grid-template-columns: 80vw 20vw;
   grid-template-rows: auto;
   grid-template-areas: "inf-grid-header inf-grid-header" "inf-grid-main inf-grid-aside" "inf-grid-footer inf-grid-footer"; }
+  @media (max-width: 1200px) {
+    .inf-grid {
+      display: grid;
+      grid-template-columns: 100vw;
+      grid-template-rows: auto;
+      grid-template-areas: "inf-grid-header" "inf-grid-main" "inf-grid-aside" "inf-grid-footer"; } }
 
 .inf-grid-main {
   background-image: url(../img/info.jpg);
@@ -250,14 +297,25 @@ body {
   height: 1200px;
   padding: 150px 100px;
   line-height: 4rem; }
+  @media (max-width: 1200px) {
+    .inf-grid-main {
+      width: 100vw; } }
+  @media (max-width: 992px) {
+    .inf-grid-main {
+      padding: 150px 50px;
+      font-size: 2rem;
+      line-height: 2rem; } }
   .inf-grid-main h1 {
     font-size: 4rem;
     color: red; }
   .inf-grid-main li {
     margin-top: 40px;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px dodgerblue; }
   .inf-grid-main a {
-    color: red; }
+    color: #B17BC8;
+    text-transform: none; }
   .inf-grid-main aside {
     font-size: 1.5rem;
     margin-top: 200px; }
@@ -268,6 +326,14 @@ body {
 
 .inf-grid-aside {
   padding-top: 100px; }
+  @media (max-width: 1200px) {
+    .inf-grid-aside {
+      width: 100vw;
+      flex-direction: column;
+      padding: 50px 0px; }
+      .inf-grid-aside section {
+        display: flex;
+        justify-content: center; } }
 
 .inf-h2 {
   text-align: center; }
@@ -276,31 +342,10 @@ body {
   margin: 20% 10%;
   width: 80%;
   height: 24vh; }
-
-@media (max-width: 1200px) {
-  .inf-grid {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: auto;
-    grid-template-areas: "inf-grid-header" "inf-grid-main" "inf-grid-aside" "inf-grid-footer"; }
-  .inf-grid-main {
-    width: 100vw; }
-  .inf-grid-aside {
-    width: 100vw;
-    flex-direction: column;
-    padding: 50px 0px; }
-    .inf-grid-aside section {
-      display: flex;
-      justify-content: center; }
-  .inf-margin {
-    margin: 0;
-    width: 45vw; } }
-
-@media (max-width: 992px) {
-  .inf-grid-main {
-    padding: 150px 50px;
-    font-size: 2rem;
-    line-height: 2rem; } }
+  @media (max-width: 1200px) {
+    .inf-margin {
+      margin: 0;
+      width: 45vw; } }
 
 /*DESCARGAR MIN-1200PX*/
 /*DESCARGAR MIN-1200PX*/
@@ -319,6 +364,9 @@ body {
   height: 1200px; }
   .sectionDescargar h1 {
     color: red; }
+  .sectionDescargar li {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black; }
   .sectionDescargar a {
     text-align: center;
     font-size: 3rem;
